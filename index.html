@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Project-1-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym website(Project-1)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <style>
+        body {
+            /*CSS reset*/
+            font-family: 'Baloo Bhai', cursive;
+            color: rgb(249, 174, 0);
+            margin: 0px;
+            padding: 0px;
+            background: url('img/Wallpaper-Barbell-And-Dumbbell-Weights-For-Gym-Workout-And6-scaled.webp');
+        }
+
+        .left img {
+            width: 80px;
+            filter: invert(100%);
+        }
+
+        .left {
+            cursor: pointer;
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 17px;
+        }
+
+        .left div:hover {
+            color: saddlebrown;
+        }
+
+        .left {
+            display: inline-block;
+            /*border: 2px solid red;*/
+            position: absolute;
+            top: 22px;
+            left: 35px;
+        }
+
+        .mid {
+            display: block;
+            width: 45%;
+            margin: 22px auto;
+            /*border: 2px solid rgb(93, 255, 6);*/
+        }
+
+        .right {
+            position: absolute;
+            top: 22px;
+            right: 35px;
+            display: inline-block;
+            /*border: 2px solid rgb(0, 26, 255);*/
+        }
+
+        .nav {
+            display: inline-block;
+        }
+
+        .nav li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .nav li a {
+            color: white;
+            text-decoration: none;
+            padding: 23px 20px;
+        }
+
+        .nav li a:hover,
+        .nav li a.active {
+             text-decoration: underline; 
+             color: tomato; 
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai', cursive;
+            background-color: black;
+            color: white;
+            padding: 11px 17px;
+            margin: 6px 6px;
+            border: 2px solid grey;
+            border-radius: 11px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+        h1{
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(244, 7, 110);
+        }
+
+        .container {
+            /*border: 2px solid rgb(254, 251, 251);*/
+            margin: 0px 306px;
+            padding: 34px 180px;
+            border-radius: 12px;
+            width: 33%;
+            color: rgb(243, 14, 14);
+        }
+
+        .form input {
+            text-align: center;
+            border: 2px solid rgba(249, 174, 0, 0.557);
+            border-radius: 25px;
+            display: block;
+            margin: 17px auto;
+            padding: 12px 30px;
+            width: 57%;
+            font-size: 16px;
+            font-family: 'Baloo Bhai', cursiv;
+            color: rgb(232, 163, 3);
+            cursor:pointer;
+
+        }
+
+        .container h1 {
+            text-align: center;
+            color: #e6920f;
+        }
+
+        .container h1:hover {
+            color: rgb(255, 81, 0);
+        }
+
+        .form button {
+            display: block;
+            width: 30%;
+            margin: auto;
+        }
+
+        .reset:hover {
+            background-color: #fa0c9b;
+        }
+
+        .reset {
+            background-color: black;
+            cursor: pointer;
+        }
+        .fun{
+            margin: 40px;
+           text-align: center;
+           padding: 40px;
+           color: #e6920f;
+        }
+        #fac{
+            margin: 30px;
+            font-size: 30px;
+            color: #ff0099;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!--Left for logo and names-->
+
+        <div class="left">
+            <img src="img/athletic-body-2787061_1280.webp" alt="">
+            <div>Tamojit's Classes</div>
+        </div>
+        <!--Mid for Navigation-->
+
+        <div class="mid">
+            <ul class="nav">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Fitness Calculator</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </div>
+        <!--Right for buttons-->
+
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym of Chandpara now</h1>
+        <form action="noaction.php">
+            <div class="form">
+                <input type="text" name="name" placeholder="What is Your name">
+                <input type="text" name="age" placeholder="What is Your age">
+                <input type="text" name="city" placeholder="Where are you from">
+                <input type="text" name="course" placeholder="What is your Gender">
+                <input type="text" name="contact" placeholder="What is your Contact Number">
+                <input type="text" name="email" placeholder="What is your Email">
+                <button class="btn">Submit</button>
+                <input type="reset" name="reset" class="reset">
+            </div>
+        </form>
+    </div>
+    <div class="fun">
+        <h2>Want to do some fun activity</h2>
+        <div id="fac">
+        <a href="https://facebook.com" target="_blank">Go to facebook</a>
+    </div>
+    <div id="ins">
+        <a href="https://instagram.com" target="_blank">Go to instagram</a>
+    </div>
+    <div id="goo">
+        <a href="https://Google.com" target="_blank">Go to Googler</a>
+    </div>
+</div>
+</body>
+
+</html>
